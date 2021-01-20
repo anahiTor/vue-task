@@ -1,0 +1,42 @@
+@import './helpers/_colors';
+.details-wrapper {
+    * {
+        transition: .2s;
+    }
+    text-align: start;
+    h1 {
+        margin-left: 1em;
+    }
+    button {
+        background-color: $primary;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: $box-shadow;
+        border: none;
+        cursor: pointer;
+        color: $text-color;
+        margin-left: 2em;
+        &:hover {
+            background-color: $primary-hover;
+            color: $text-light;
+        }
+    }
+    .details-block {
+        background-color: $background;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
+        width: 80%;
+        padding: 1.5em;
+        margin: 2em auto!important;
+        .detail {
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 2em;
+            margin-bottom: 1em;
+            strong {
+                font-size: 18px;
+            }
+        }
+    }
+}
